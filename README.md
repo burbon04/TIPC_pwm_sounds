@@ -32,7 +32,18 @@ But since the system's mainboard incorporates the same Intel 8253 Programmable I
 | --- | --- | --- |
 | cmd | 20h | 18h |
 
-Further details can be found in the available TIPC System ROM 1.23 Listing.
+**Timer IRQ**
+| IBM | TIPC |
+| --- | --- |
+| 08h | 43h |
+
+**System Control Port**
+| IBM | TIPC |
+| --- | --- |
+| 61h (direct) | 00h (latch) |
+
+
+Further details can be found in the available TIPC System ROM 1.23 Listing, search for SPKREN (bit 0) and TMRIEN (bit 1).
 
 **NOTES**
 
